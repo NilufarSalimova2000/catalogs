@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-track {
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .slider__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .slider {
+    position: relative;
+    margin-top: 50px;
+    border-radius: 20px;
+  
+  }
+  
+  .slick-arrow {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    z-index: 10000;
+  }
+  
+  .slick-next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slick-prev {
+    position: absolute;
+    z-index: 10000;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+  }
+  
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 15px;
+  }
+  
+  .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #5656f4;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  .slick-dots .slick-active button {
+    background-color: red
+  }
